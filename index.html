@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 7</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-movil.css">
+  <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+
+</head>
+
+<body id="root" class="ancho">
+  <header>
+    <figure>
+      <img src="img/pullrequest-logo.svg" alt="logo">
+    </figure>
+    <a href="#" id="bar-menu-id"><i class="fa-solid fa-bars"></i></a>
+  </header>
+
+  <section>
+    <div class="ocultar" id="div-menu-id">
+      <nav class="nav-menu">
+        <a href="#">Inicio</a>
+        <a href="#">Empresa</a>
+        <a href="#">Servicios</a>
+        <a href="#">Clientes</a>
+        <a href="#">Ubicacion</a>
+        <a href="#">Contactanos</a>
+      </nav>
+    </div>
+    <article>
+      <div class="div-text">
+        <h1>Creacion de paginas web</h1>
+        <h2>Curso básico de HTML5 y CSS3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates hic
+          animi praesentium nulla cumque aliquam optio obcaecati alias, quos
+          voluptatem officia ullam adipisci assumenda architecto ipsa voluptate nihil
+          totam.</p>
+        <a href="#" id="btn-ver-id">Ver</a>
+      </div>
+      <figure id="figure-main-id">
+        <img src="img/foto_pullrequest.svg" alt="creacion de paginas web">
+      </figure>
+    </article>
+  </section>
+
+  <footer>
+    <p>@Denilsonnuñez</p>
+  </footer>
+
+
+
+  <script>
+    $("#bar-menu-id").click(function () {
+      $("#div-menu-id").slideToggle();
+    });
+
+    $("#btn-ver-id").click(function () {
+      $("#figure-main-id").slideToggle();
+    });
+
+  </script>
+
+</body>
+
+</html>
