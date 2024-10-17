@@ -1,21 +1,17 @@
-#root {
-  --color-dark-blue: #28567a;
-  --color-gold: #cb8f00;
-  --color-light-gray: #e6e6e6;
-  --color-white: #ffffff;
+:root {
+  --color-light-gray: #f3f3f3;
+  --color-green: #6cb500;
+  --color-white: #fff;
   --color-black: #333;
 }
 
-/* --------------FORMAT CSS------------- */
+/* ------------------------------------- */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.borde {
-  border: 1px red solid;
+  font-weight: normal;
 }
 
 .ancho {
@@ -24,10 +20,10 @@
 }
 
 body {
-  font-family: Helvetica;
+  color: var(--color-black);
+  font-family: "Arimo", sans-serif;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
-  color: var(--color-black);
 }
 
 button {
@@ -36,114 +32,113 @@ button {
 
 /* ------------------------------------- */
 
-header {
+.hdr-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
-  background-color: var(--color-light-gray);
+  max-width: 1000px;
+  padding: 10px 0px;
 }
 
-header figure {
-  width: 300px;
+.hrd-div-bar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header img {
+.hdr-bar {
+  color: var(--color-green);
+  display: none;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.hdr-div figure {
+  width: 200px;
+}
+
+.hdr-div img {
   width: 100%;
   height: 100%;
 }
 
-header a {
-  color: var(--color-white);
-  background-color: var(--color-dark-blue);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  display: none;
-}
-
-/* ------------------------------------- */
-
-.nav-menu {
+.nav-menu ul {
+  list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  padding: 20px 0px;
+  gap: 50px;
 }
 
-.nav-menu a {
-  text-align: center;
+.nav-menu ul a {
   display: inline-block;
   text-decoration: none;
-  color: var(--color-dark-blue);
-  border: 2px var(--color-dark-blue) solid;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 5px;
+  color: var(--color-black);
   transition: all .10s linear;
 }
 
-.nav-menu a:hover {
-  background-color: var(--color-dark-blue);
-  color: var(--color-white);
-  border-color: var(--color-dark-blue);
+.nav-menu ul a:hover {
+  color: var(--color-green);
 }
 
 /* ------------------------------------- */
 
-article {
-  display: flex;
-  padding: 20px;
+main {
+  background-image: url(imagenes/foto_slide.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.div-text {
-  width: 50%;
+.main-div {
+  position: relative;
+}
+
+
+main h1 {
+  color: var(--color-white);
+  max-width: 480px;
+  font-size: 34px;
+  line-height: 34px;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+/* ------------------------------------- */
+
+.art-NS {
+  text-align: center;
+  padding: 40px 0px;
+}
+
+h3 {
+  color: var(--color-green);
+}
+
+.div-art-serv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.div-art-serv article {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-light-gray);
+  border-radius: 15px;
   justify-content: center;
-  gap: 15px;
-  padding: 10px 0px;
-  padding-right: 20px;
-
-}
-
-.div-text h1 {
-  color: var(--color-gold);
-  font-size: 24px;
-}
-
-.div-text h2 {
-  font-size: 18px;
-}
-
-.div-text a {
-  color: var(--color-white);
-  background-color: var(--color-dark-blue);
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-  width: 80px;
+  align-items: center;
+  max-width: 370px;
+  padding: 20px 40px;
   text-align: center;
-  border-radius: 5px;
-  font-weight: bold;
-  border: 2px var(--color-dark-blue) solid;
-  transition: all .10s linear;
 }
 
-.div-text a:hover {
-  color: var(--color-dark-blue);
-  background-color: var(--color-white);
-  border: 2px var(--color-dark-blue) solid;
+.div-art-serv figure {
+  max-width: 100px;
 }
 
-article figure {
-  width: 50%;
-  border: 1px var(--color-black) solid;
-  border-radius: 10px;
-  padding: 10px;
-  display: none;
-}
-
-article img {
+.div-art-serv img {
   width: 100%;
   height: 100%;
 }
@@ -151,8 +146,12 @@ article img {
 /* ------------------------------------- */
 
 footer {
-  background-color: var(--color-dark-blue);
-  color: var(--color-white);
+  background-color: var(--color-green);
   text-align: center;
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
+
+footer img {
+  max-width: 200px;
+}
+
